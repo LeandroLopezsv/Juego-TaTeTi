@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Te Ti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio 🏁</a></li>
+                <li><a href="#rules">Reglamento📗</a></li>
+                <li><a href="#game">Juego ✍️</a></li>
+            </ul>
+        </nav>
+
+    </header>
+   
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ta Te Ti</h1>
+            <p>¡Diviértete con tus amigos jugando al Ta Te Ti!</p>
+            <a href="#game" id="restart-button" class="cta-button">Iniciar Partida</a>
+        </div>
+    </section>    
+
+    <section id="rules" class="rules">
+        <h2>Reglamento del Juego 📗</h2>
+        <p>El objetivo del Ta Te Ti es alinear tres fichas del mismo color/formato en una fila, columna o diagonal. El juego se disputa al mejor de 3 partidas.</p>
+    </section>
+    
+    <section id="game" class="game">
+        <h2>Juego ✍️</h2>
+        <div id="scoreboard">
+            <p class="players">Jugador X 🏃🏼: <span id="player1-score">0</span></p>
+            <p class="players">Jugador O 🏃🏼‍♂️: <span id="player2-score">0</span></p>
+        </div>
+        <div id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+    
+
+        <div id="board-button">
+            
+            <button id="start-button" class="cta-button">Iniciar Nuevo Set</button>
+            <button id="restart-button" class="cta-button">Reiniciar Partida</button>
+    
+        </div>    
+        <div id="game-over-message" class="game-over">
+            <h2 id="winner-message"></h2>
+           
+            <button id="play-again-button" class="cta-button-over">Volver a Jugar un Set</button>
+            <button id="exit-button" class="cta-button-over">Salir</button>           
+        
+        </div>
+    
+    </section>
+
+  
+</body>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <footer>
+        <p>&copy; 2024 . Todos los derechos reservados.</p>
+        
+    </footer>
+
+</html>

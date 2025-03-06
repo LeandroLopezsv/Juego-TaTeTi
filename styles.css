@@ -1,0 +1,234 @@
+body {
+    background: #f8f8ff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 80%;
+    background: #383b3b;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+        
+}
+
+ul a:hover {
+    opacity: 0,8;
+        scale: 1.1;
+}
+
+
+.hero-content h1 {
+    color: red;    
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    
+    background-color: #3b1d72;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    width: 30%;
+    margin: auto;   
+    text-align: center;
+
+}
+
+.cta-button-over {
+    
+    background-color: #3b1d72;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.game {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px 0;
+}
+
+    
+.rules h2, .game h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.rules{
+    width: 60%;
+}
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#board-button{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.players {
+    padding: 2%;
+    background:  #505e48;
+    color:#f8f8ff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* sombra suave */
+    border-radius: 8px; /* bordes redondeados para un estilo más moderno */
+    width: 18%;
+}
+
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background: #505e48;
+    border: 2px solid gainsboro;
+    user-select: none;
+}
+
+.cell:hover {
+    box-shadow: 0px 5px 10px rgb(168, 78, 17);
+    transform: scale(1.1);
+}
+ 
+
+.cell.x {
+    color: #ff6347; /* Color para "X" */
+}
+
+.cell.o {
+    color:#00FFEF; /* Color para "O" */
+}
+
+
+blockquote {
+    font-style: italic;
+}
+
+
+.cta-button:hover{
+    opacity: 0,8;
+    scale: 1.1;
+}
+
+.contact form button:hover{
+    opacity: 0,8;
+    scale: 1.1;
+}
+
+footer {
+/*    width: 90%;*/
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+/*    position: fixed;*/
+    bottom: 0;
+    margin-top: 10px;
+}
+
+
+.game-over {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-over h2 {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    margin: 10px;
+    width: 35%;
+    display: inline-grid;
+
+}
+
+
+span {
+    content: '';
+    margin: auto;
+    font-size: xx-large;
+}
+
+.chat{
+    margin: auto;
+    color: white;
+    margin-bottom: -10px;
+}
+
+img.chat{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
